@@ -1,95 +1,171 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+<html lang="en">
 
-  
-  <title>第一个 Python 程序 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一个 Python 程序目标 第一个 HelloPython 程序 Python 2.x 与 3​​.x 版本简介 执行 Python 程序的三种方式 解释器 —— python &#x2F; python3 交互式 —— ipython 集成开发环境 —— PyCharm    01. 第一个 HelloPython 程序1.1 Python 源程序的基本概念 Python 源程序就是一个特殊格式的文本">
-<meta property="og:type" content="article">
-<meta property="og:title" content="第一个 Python 程序">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;04&#x2F;10&#x2F;%E7%AC%AC%E4%B8%80%E4%B8%AA%20Python%20%E7%A8%8B%E5%BA%8F&#x2F;index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一个 Python 程序目标 第一个 HelloPython 程序 Python 2.x 与 3​​.x 版本简介 执行 Python 程序的三种方式 解释器 —— python &#x2F; python3 交互式 —— ipython 集成开发环境 —— PyCharm    01. 第一个 HelloPython 程序1.1 Python 源程序的基本概念 Python 源程序就是一个特殊格式的文本">
-<meta property="og:locale" content="en">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;04&#x2F;10&#x2F;%E7%AC%AC%E4%B8%80%E4%B8%AA%20Python%20%E7%A8%8B%E5%BA%8F&#x2F;media&#x2F;14950456888393&#x2F;001_%E7%A7%AF%E8%B7%AC%E6%AD%A5%E4%BB%A5%E8%87%B3%E5%8D%83%E9%87%8C.jpg">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;04&#x2F;10&#x2F;%E7%AC%AC%E4%B8%80%E4%B8%AA%20Python%20%E7%A8%8B%E5%BA%8F&#x2F;media&#x2F;14950456888393&#x2F;001_PyCharm%E7%9A%84%E7%95%8C%E9%9D%A2%E7%BB%93%E6%9E%84.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;04&#x2F;10&#x2F;%E7%AC%AC%E4%B8%80%E4%B8%AA%20Python%20%E7%A8%8B%E5%BA%8F&#x2F;media&#x2F;14950456888393&#x2F;002_PyCharm%E8%BF%90%E8%A1%8C%E5%B7%A5%E5%85%B7%E6%A0%8F.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;04&#x2F;10&#x2F;%E7%AC%AC%E4%B8%80%E4%B8%AA%20Python%20%E7%A8%8B%E5%BA%8F&#x2F;media&#x2F;14950456888393&#x2F;003_PyCharm%E8%B0%83%E8%AF%95%E5%99%A8.png">
-<meta property="og:updated_time" content="2017-05-23T07:31:34.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;04&#x2F;10&#x2F;%E7%AC%AC%E4%B8%80%E4%B8%AA%20Python%20%E7%A8%8B%E5%BA%8F&#x2F;media&#x2F;14950456888393&#x2F;001_%E7%A7%AF%E8%B7%AC%E6%AD%A5%E4%BB%A5%E8%87%B3%E5%8D%83%E9%87%8C.jpg">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <meta name="theme-color" content="#600090">
+    <meta name="msapplication-navbutton-color" content="#600090">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
+    <link rel="alternate" type="application/atom+xml" title="Hexo" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+    <title>
+        
+        第一个 Python 程序｜undefined
+        
+    </title>
+
+    <link rel="canonical" href="http://yoursite.com/2019/04/10/第一个 Python 程序/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/blog-style.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-第一个 Python 程序" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/04/10/%E7%AC%AC%E4%B8%80%E4%B8%AA%20Python%20%E7%A8%8B%E5%BA%8F/" class="article-date">
-  <time datetime="2019-04-10T13:36:46.000Z" itemprop="datePublished">2019-04-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      第一个 Python 程序
-    </h1>
-  
+<style>
 
-      </header>
+    header.intro-header {
+        background-image: url('')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+" data-ishome = "false" >
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated pulse" href="/">
+                <span class="brand-logo">
+                    Hexo
+                </span>
+                's Blog
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <!-- /.navbar-collapse -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+					
+                    
+					
+					
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+//    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!-- Main Content -->
+
+<!--only post-->
+
+
+<img class="wechat-title-img"
+     src="">
+
+
+<style>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="第一个-Python-程序"><a href="#第一个-Python-程序" class="headerlink" title="第一个 Python 程序"></a>第一个 Python 程序</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ul>
+    header.intro-header {
+        background-image: url('')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>第一个 Python 程序</h1>
+                    
+                    <span class="meta">
+                         作者 John Doe
+                        <span>
+                          日期 2019-04-10
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post-title-haojen">
+        <span>
+            第一个 Python 程序
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <h1 id="第一个-Python-程序"><a href="#第一个-Python-程序" class="headerlink" title="第一个 Python 程序"></a>第一个 Python 程序</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ul>
 <li>第一个 <code>HelloPython</code> 程序</li>
 <li><code>Python 2.x</code> 与 <code>3​​.x</code> 版本简介</li>
 <li>执行 <code>Python</code> 程序的三种方式<ul>
@@ -300,120 +376,168 @@
 </ul>
 <p><img src="media/14950456888393/003_PyCharm%E8%B0%83%E8%AF%95%E5%99%A8.png" alt="003_PyCharm调试器"></p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/10/%E7%AC%AC%E4%B8%80%E4%B8%AA%20Python%20%E7%A8%8B%E5%BA%8F/" data-id="ck2437qqi0002sx1p6bxzfu0u" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2019/10/24/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2019/04/10/%E8%AE%A4%E8%AF%86%20Python/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">认识 Python</div>
-    </a>
-  
-</nav>
+                <hr>
+                
 
-  
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2019/10/24/hello-world/" data-toggle="tooltip" data-placement="top"
+                           title="Hello World">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/04/10/认识 Python/" data-toggle="tooltip" data-placement="top"
+                           title="认识 Python">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                
+
+                
+
+
+                <!--加入新的评论系统-->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第一个-Python-程序"><span class="toc-text">第一个 Python 程序</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#目标"><span class="toc-text">目标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#01-第一个-HelloPython-程序"><span class="toc-text">01. 第一个 HelloPython 程序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-Python-源程序的基本概念"><span class="toc-text">1.1 Python 源程序的基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-演练步骤"><span class="toc-text">1.2 演练步骤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-演练扩展-——-认识错误（BUG）"><span class="toc-text">1.3 演练扩展 —— 认识错误（BUG）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#关于错误"><span class="toc-text">关于错误</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第一个演练中的常见错误"><span class="toc-text">第一个演练中的常见错误</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#单词列表"><span class="toc-text">单词列表</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#02-Python-2-x-与-3​​-x-版本简介"><span class="toc-text">02. Python 2.x 与 3​​.x 版本简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#03-执行-Python-程序的三种方式"><span class="toc-text">03. 执行 Python 程序的三种方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-解释器-python-python3"><span class="toc-text">3.1. 解释器 python / python3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Python-的解释器"><span class="toc-text">Python 的解释器</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#其他解释器（知道）"><span class="toc-text">其他解释器（知道）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-交互式运行-Python-程序"><span class="toc-text">3.2. 交互式运行 Python 程序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-交互式运行-Python-的优缺点"><span class="toc-text">1) 交互式运行 Python 的优缺点</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#优点"><span class="toc-text">优点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#缺点"><span class="toc-text">缺点</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-退出-官方的解释器"><span class="toc-text">2) 退出 官方的解释器</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-gt-直接输入-exit"><span class="toc-text">1&gt; 直接输入 exit()</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-gt-使用热键退出"><span class="toc-text">2&gt; 使用热键退出</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-IPython"><span class="toc-text">3) IPython</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#特点"><span class="toc-text">特点</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#版本"><span class="toc-text">版本</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-gt-直接输入-exit-1"><span class="toc-text">1&gt; 直接输入 exit</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-gt-使用热键退出-1"><span class="toc-text">2&gt; 使用热键退出</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IPython-的安装"><span class="toc-text">IPython 的安装</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-Python-的-IDE-——-PyCharm"><span class="toc-text">3.3. Python 的 IDE —— PyCharm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1）-集成开发环境（IDE）"><span class="toc-text">1） 集成开发环境（IDE）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2）PyCharm-介绍"><span class="toc-text">2）PyCharm 介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3）PyCharm-快速体验"><span class="toc-text">3）PyCharm 快速体验</span></a></li></ol></li></ol></li></ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Sidebar Container -->
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+
+    </div>
 </article>
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
 
-  
-    
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <br>
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Hexo 2019
+                    <br>
+                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
+                    <br>
+                    Theme by <a href="https://haojen.github.io/" target="_blank" rel="noopener">Haojen Ma</a>
+                </p>
+
+            </div>
+        </div>
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/10/24/hello/">hello</a>
-          </li>
-        
-          <li>
-            <a href="/2019/10/24/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2019/04/10/%E7%AC%AC%E4%B8%80%E4%B8%AA%20Python%20%E7%A8%8B%E5%BA%8F/">第一个 Python 程序</a>
-          </li>
-        
-          <li>
-            <a href="/2019/04/10/%E8%AE%A4%E8%AF%86%20Python/">认识 Python</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/blog.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://yoursite.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
-
-<script src="/js/script.js"></script>
+<!-- Google Analytics -->
 
 
 
-  </div>
+<!-- Baidu Tongji -->
+
+
+<!-- swiftype -->
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','','2.0.0');
+</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--wechat title img-->
+<img class="wechat-title-img" src="">
 </body>
+
 </html>
